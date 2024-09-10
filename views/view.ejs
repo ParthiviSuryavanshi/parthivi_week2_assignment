@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <h2><%= post.title %></h2>
+    <p><%= post.content %></p>
+    <form action="/edit/<%= post.id %>" method="post" style="display:inline;"></form>
+      <button type="submit"><a href="/edit/<%= post.id %>">Edit</a></button>
+    </form>
+    <form action="/delete/<%= post.id %>" method="post" style="display:inline;">
+      <button type="submit">Delete</button>
+    </form>
+    <br>
+    <form>
+      <button type="submit"><a href="/">Back to Home</a></button>
+    </form>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

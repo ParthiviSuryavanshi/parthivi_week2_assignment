@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a0c4da;
+  }
+  
+  header {
+    background-color: #426880;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  a {
+    color: white; /* Blue color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  nav a {
+    color: white;
+    margin: 2rem 2rem;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #a0c4da; /* Change background color on hover */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    text-decoration: none; /* Ensure underline is not present on hover */
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: #426880;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
+  form {
+    margin-top: 0.7rem;
+  }
+  
+  button {
+    background-color: #426880; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 0.5rem 1rem; /* Button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 12px; /* Curved corners */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #223a49; /* Darker shade on hover */
+  }
+  
+  /* Additional button styles if needed */
+  button:focus {
+    outline: none; /* Remove default outline */
+  }
+  
+  button:disabled {
+    background-color: #6c757d; /* Gray color for disabled state */
+    cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+  }
+  textarea {
+    width: 100%;
+  }
+  h2 {
+    font-size: 60;
+    text-shadow: #223a49;
+    text-decoration: wavy;
+    padding-left: 20;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+  }
+  
+  /* Scaling effect on hover */
+  li:hover {
+    transform: scale(1.03); /* Scale up by 5% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  }
+  
+  /* Additional styling for post title and content */
+  .post-title {
+    font-size: 1.5rem; /* Increase font size of the title */
+    color: #007bff; /* Title color */
+  }
+  
+  .post-content {
+    font-size: 1.2rem; /* Increase font size of the content */
+    color: #333; /* Content color */
+    line-height: 1.6; /* Adjust line height */
+  }
